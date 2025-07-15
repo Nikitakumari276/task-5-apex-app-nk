@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capstone Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <h1>🛍️ QuickPick</h1>
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+      </select>
+      <a href="cart.html" class="cart-link">🛒 Cart</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="product-list"></div>
+  </main>
+
+  <div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <span id="pageNum">Page 1</span>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <footer>
+    <div class="container" id="caption">
+      <p>© 2025 Capstone Shop. All rights reserved. 💛</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
